@@ -39,13 +39,13 @@ export default function Home() {
   return (
 
     <>
-      <div className=" h-[100vh] w-[100vw] flex items-center flex-col gap-10 justify-center">
-        <p>YAML TO JSON CONVERTER</p>
-        <div className=" flex justify-center gap-10 items-center ">
-          <Textarea className=" w-[30vw] h-[60vh]" onChange={handleChange} placeholder="YAML" />
-          <Textarea className=" w-[30vw]  h-[60vh]" placeholder="JSON" value={json} readOnly/>
+      <div className=" h-[100vh] w-[100vw] flex items-center flex-col gap-[2px] justify-center">
+        <p className=" p-2 mt-8">YAML TO JSON CONVERTER</p>
+        <div className=" flex justify-center lg:gap-20 items-center flex-wrap w-[100%] h-[100%] gap-1 ">
+          <Textarea className=" w-[23rem] h-[45%] sm:w-[30rem] lg:h-[80%] " onChange={handleChange} placeholder="YAML" />
+          <Textarea className=" w-[23rem] h-[45%] sm:w-[30rem] lg:h-[80%] " placeholder="JSON" value={json} readOnly/>
         </div>
-        <Button onClick={handleClick}>Convert</Button>
+        <Button onClick={handleClick} className=" mb-3">Convert</Button>
 
       </div>
 
